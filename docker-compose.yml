@@ -1,0 +1,12 @@
+version: "3.8"
+services:
+  breeding:
+    build: .
+    ports:
+      - "9803:9803"
+    volumes:
+      - breeding_data:/data
+    environment:
+      - PORT=9803
+volumes:
+  breeding_data:
